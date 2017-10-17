@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./favicon.png">
+    <title>Feed Test Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <script type="text/javascript" rel="script" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <div id="pageLogo"></div>
+    <div id="pageTitle">Feed Test Page</div>
+</header>
+<div id="pageBody">
+    <section id="setupSection">
+        <span id="formTitle">Setup:</span>
+        <form id="setupForm">
+            <span class="formLabel">Publisher Id:</span><br>
+            <input type="text" class="formInput" id="pubId" placeholder="taboola-training">
+            <br>
+            <span class="formLabel">Placement Name:</span><br>
+            <input type="text" class="formInput" id="placementName" value="Below Article Thumbnails">
+            <br>
+            <span class="formLabel">Action Bucket Id:</span><br>
+            <input type="text" class="formInput" id="actionBucketId" placeholder="example: pub-feed-action-bucket">
+            <br>
+            <span class="formLabel">Simulate video demand:</span><br>
+            <input type="checkbox" class="formCheckBox" id="forceVideo" checked>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <section id="previewSection">
+        <span id="previewTitle">Preview:</span>
+        <div class="row">
+            <p id="articleTitle">Lorem Ipsum</p>
+            <img src="images/illustration.gif" width="100%">
+            <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+            <h5>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
+                pain..."</h5>
+            <hr/>
+            <div id="Content">
+                <div id="lipsum">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum ante sed enim tempor
+                        dignissim. Quisque semper mi Ishai feugiat semper. Curabitur vulputate, turpis vel sagittis
+                        laoreet, quam nisi tempus est, sit amet consequat nisl odio elementum ex. Integer et nisi
+                        luctus, faucibus risus nec, imperdiet justo. Suspendisse potenti. Sed pellentesque non odio non
+                        cursus. Vivamus vel viverra nisi, sit amet dignissim neque. Curabitur egestas ultrices dictum.
+                        Morbi semper urna nisl, vitae faucibus dui molestie non. Proin lobortis dui sed nunc
+                        pellentesque molestie. Maecenas sed diam a nunc volutpat consectetur. Integer pulvinar malesuada
+                        tincidunt. Vestibulum nisi ante, rutrum vitae magna venenatis, aliquet vestibulum magna.
+                        Pellentesque sed ultricies eros. Donec a sem et lorem posuere rhoncus rutrum at massa. Mauris
+                        vel rutrum arcu.
+                    </p>
+                    <p>
+                        Sed gravida libero ante, vitae tempus lorem vestibulum et. Nulla nec Rifat eros. Sed lorem mi,
+                        dapibus tristique sollicitudin vitae, accumsan ac nibh. Maecenas at Zlil mi. Fusce maximus
+                        volutpat nunc, ut fermentum felis ullamcorper at. Pellentesque pretium elit ut Irit tincidunt,
+                        id vehicula quam sollicitudin. Nunc tortor orci, hendrerit sed condimentum at, tristique eu
+                        dolor. Pellentesque vehicula mauris ut varius luctus. Quisque bibendum porttitor ligula, ac
+                        efficitur velit fringilla ac.
+                    </p>
+                    <p>
+                        Alex tristique turpis erat, eleifend posuere tortor accumsan vel. Pellentesque vitae laoreet
+                        magna. Vestibulum eu quam ac ex iaculis mattis sit amet vitae enim. Phasellus ut mollis lectus.
+                        Praesent efficitur porttitor sodales. Aenean dapibus interdum nunc eu consequat. Donec nec
+                        tortor ac eros pellentesque dapibus. Vestibulum finibus tellus vel luctus sollicitudin.
+                    </p>
+                    <p>
+                        Sed non turpis sed lectus Asaf semper. Duis elit quam, sodales id Narkis at, aliquet porttitor
+                        turpis. Nunc varius, risus et vehicula vestibulum, nunc est egestas erat, ac ultrices velit
+                        magna in eros. Maecenas et egestas felis. Morbi et tellus augue. Nunc eleifend dui purus, nec
+                        viverra sem tincidunt nec. Donec eu commodo lorem. Integer eros est, tincidunt gravida metus et,
+                        eleifend dapibus lacus. Integer eget neque ac lectus pharetra maximus. Vestibulum eget molestie
+                        nisl. Fusce pharetra turpis vitae nunc efficitur lobortis. Orci varius natoque penatibus et
+                        magnis dis parturient montes, nascetur ridiculus mus. Cras ut justo tempus, posuere augue sit
+                        amet, vulputate lectus. Vivamus venenatis maximus urna in mollis.
+                    </p>
+                </div>
+            </div>
+            <div id="taboola-below-article-thumbnails"></div>
+            <script type="text/javascript">
+                window._taboola = window._taboola || [];
+                _taboola.push({
+                    mode: 'thumbnails-feed-test-page',
+                    container: 'taboola-below-article-thumbnails',
+                    placement: 'Below Article Thumbnails',
+                    target_type: 'mix'
+                });
+            </script>
+        </div>
+    </section>
+</div>
+<script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({flush: true});
+</script>
+</body>
+</html>
